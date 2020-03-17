@@ -1,1 +1,1 @@
-(new WOW).init(),$(document).ready(function(){});
+(new WOW).init(),$(document).ready(function(){var e=(new Date).getFullYear();document.getElementById("copy").innerHTML="Simon Brain "+e});
