@@ -1,1 +1,1 @@
-(new WOW).init(),$(document).ready(function(){var e=(new Date).getFullYear();document.getElementById("copy").innerHTML="Simon Brain "+e});
+function myMap(){var e=new google.maps.LatLng(52.1010523,-1.9229738),n={center:e,zoom:16,mapTypeId:google.maps.MapTypeId.HYBRID},o=new google.maps.Map(document.getElementById("googleMap"),n);new google.maps.Marker({position:e}).setMap(o)}(new WOW).init(),$(document).ready(function(){var e=(new Date).getFullYear();document.getElementById("copy").innerHTML="Simon Brain "+e});
