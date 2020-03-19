@@ -10,11 +10,11 @@ html(lang="en")
         hr
         .container
             .row
-                .col-md-6.col-lg-4.cards.wow.fadeInLeft(data-wow-delay="300ms")
+                .col.col-lg-4.cards.wow.fadeInLeft(data-wow-delay="300ms")
                     .cards-inner.d-shadow
                         span.fas.fa-paint-roller.fa-x3
                         p Tailored To Your Needs
-                .col-md-6.col-lg-4.cards.wow.fadeIn(data-wow-delay="1000ms")
+                .col.col-lg-4.cards.wow.fadeIn(data-wow-delay="1000ms")
                     .cards-inner.d-shadow
                         span.fas.fa-pencil-ruler
                         p Pixel Perfect Code
@@ -30,7 +30,8 @@ html(lang="en")
             .container-outer
                 .container
                     .row
-                        h1 Contact
+                        .col
+                            h1.m-3 Contact
                     .row.d-flex.align-items-center.flex-column
                         a(href="mailto:simonrbrain@yahoo.co.uk").btn.btn-success.wow.flipInX(data-wow-offset="100", data-wow-delay="300ms")
                             p Message Me....
@@ -39,5 +40,4 @@ html(lang="en")
                             p Call Me....
         hr
         #googleMap.wow.fadeIn(data-wow-offset="100")
-        hr
         include includes/footer
