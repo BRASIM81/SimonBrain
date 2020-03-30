@@ -21,6 +21,13 @@ $(document).ready(function(){
 	 var d = new Date();
 	 var y = d.getFullYear();
 	 document.getElementById('copy').innerHTML = "Simon Brain " + y;
+	$("#cookie").on('click', function(e){
+		e.preventDefault();
+		$("#cookies").css({
+			'opacity':'0',
+			'transform':'translate(0,100%)'
+		});
+	});
 	 $('.home-nav').on('click', function(e){
 		e.preventDefault();
 		$('html, body').animate({
