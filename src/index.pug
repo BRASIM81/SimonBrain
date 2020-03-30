@@ -3,8 +3,10 @@ html(lang="en")
     head
         include includes/head
         title H o m e
-    body
-        - const page = 'home';
+    body#top
+        .home-nav
+            a(href="#top")
+                span.fas.fa-arrow-up
         include includes/nav
         include includes/carousel
         hr
@@ -22,7 +24,7 @@ html(lang="en")
                     .cards-inner.d-shadow
                         span.far.fa-heart
                         p Built With Love
-            h1.wow.fadeIn Welcome to my website
+            h1.wow.fadeIn.trigger Welcome to my website
             p I'm Simon Brain a freelance front-end web designer &amp; developer based in Evesham Worcestershire.
             p I am passionate about building websites and coding, alwasys learning the latest programming languages.
         hr
