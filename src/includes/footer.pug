@@ -4,10 +4,25 @@ footer
         .container
             .row
                 .col-md-6
+                    a.d-shadow(href="#" data-toggle="modal" data-target="#share")
+                        button.btn.btn-success.d-shadow
+                            span.fa.fa-share-alt  Share
                 .col-md-6
             .row
                 .col.d-flex.justify-content-end.align-items-end
                     #copy.text-white
+.modal.fade#share(role="dialog")
+    .modal-dialog
+        .modal-content
+            .modal-header
+                button.close(type="button", data-dismiss="modal", title="close") &times;
+                h4.modal-title
+                    span.fa.fa-share-alt  Share
+            .modal-body
+                a(href="mailto:?subject=Please see this website&body=Check out this website http://www." class="btn btn-block" style="background-color:#deac33; color:#ffffff;")
+                    span.fa.fa-envelope-o  Email
+            .modal-footer
+                button.btn.btn-default(type="button", data-dismiss="modal") Close
 #cookies
     .container
         .row
