@@ -1,0 +1,29 @@
+form
+  width: 80%
+  margin: 20px auto 40px auto
+
+  .form-group
+    position: relative
+    input 
+      margin-bottom: 30px
+    i 
+      position: absolute
+      right: 15px
+      top: 45px
+      &.fa-exclamation-circle
+        color: red
+      &.fa-check-circle
+        color: green 
+    small
+      position: absolute
+      top: 75px
+      left: 25px
+      color: red
+  .hide
+    display: none
+  .formError
+    border: solid 3px red
+  .formSuccess
+    border: solid 3px green
+#send
+  width: 150px !important

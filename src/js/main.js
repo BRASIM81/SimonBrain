@@ -9,6 +9,37 @@ window.onload = function(){
 		}
 	}
 };
+var send = document.getElementById('send');
+
+function nameCheck(){
+	var name = document.getElementById('name');
+	var nameVal = name.value;
+	var message = document.getElementById('message');
+	var errCheck = document.getElementById('err');
+	var success = document.getElementById('success');
+	if(nameVal === ''){
+		message.innerHTML = 'Name cannot be blank';
+		name.classList.remove("formSuccess");
+		name.classList.add("formError");
+		errCheck.classList.remove("hide");
+		success.classList.add("hide");
+		send.setAttribute("disabled", "true");
+	}else if(nameVal.length < 4){
+		message.innerHTML = 'Name too short';
+		name.classList.remove("formSuccess");
+		name.classList.add("formError");
+		errCheck.classList.remove("hide");
+		success.classList.add("hide");
+		send.setAttribute("disabled", "true");
+	}else{
+		message.innerHTML = '';
+		errCheck.classList.add("hide");
+		name.classList.remove("formError");
+		name.classList.add("formSuccess");
+		success.classList.remove("hide");
+		send.removeAttribute("disabled");
+	}
+};
 
 new WOW().init();
 function myMap() {
