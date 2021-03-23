@@ -24,57 +24,11 @@ html(lang="en")
 					.cards-inner.d-shadow
 						span.far.fa-heart
 						p Built With Love
-			#about.my-4
-				h1.wow.fadeIn.trigger Welcome to my website
-				p I'm Simon Brain a freelance front-end web designer &amp; developer based in Evesham Worcestershire.
-				p I am passionate about building websites and coding, alwasys learning the latest programming languages.
-				a(href="https://www.facebook.com/simonrbrain/")
-					i.fab.fa-facebook-square.p-3
-				a(href="https://www.instagram.com/brasim/")
-					i.fab.fa-instagram.p-3
-				a(href="https://twitter.com/bypassnurseries")
-					i.fab.fa-twitter-square.p-3 
+			include includes/about
 		hr
-		.container 
-			#skills.my-4
-				h1.wow.fadeIn Skills 
-				h3.wow.fadeInDown(data-wow-delay="300ms") PROGRAMMING LANGUAGES & TOOLS
-				.toolIcons.d-flex.flex-row.justify-content-around.flex-wrap.mx-3
-					i.fab.fa-html5.fa-3x.p-2
-					i.fab.fa-php.fa-3x.p-2
-					i.fab.fa-css3.fa-3x.p-2
-					i.fab.fa-js.fa-3x.p-2 
-					i.fab.fa-node-js.fa-3x.p-2
-					i.fab.fa-sass.fa-3x.p-2 
-					i.fab.fa-less.fa-3x.p-2
-					i.fab.fa-bootstrap.fa-3x.p-2 
-					i.fab.fa-wordpress.fa-3x.p-2 
-					i.fab.fa-npm.fa-3x.p-2 
-					i.fab.fa-gulp.fa-3x.p-2 
-					i.fab.fa-git.fa-3x.p-2 
-					i.fab.fa-git-alt.fa-3x.p-2
-				h3.py-3.wow.fadeInDown(data-wow-delay="300ms") WORKFLOW
-				p.wow.fadeIn(data-wow-delay="500ms") Mobile-First, Responsive Design
-				i.fas.fa-terminal.wow.fadeInLeft
-				br  
-				p.wow.fadeIn(data-wow-delay="500ms") Cross Browser Testing & Debugging
-				i.fas.fa-terminal.wow.fadeInLeft
+		include includes/skills
 		hr
-		#contact
-			.container-outer
-				.container
-					.row
-						.col
-							h1.m-3 Contact
-					.row
-						.col 
-							include includes/contact
-					.row.d-flex.align-items-center.flex-column
-						a.btn.btn-success.wow.flipInX(href="mailto:simonrbrain@yahoo.co.uk" data-wow-offset="100" data-wow-delay="300ms")
-							p Message Me....
-						br
-						a.btn.btn-success.wow.flipInX(href="tel:00000" data-wow-offset="100", data-wow-delay="400ms")
-							p Call Me....
+		include includes/contact
 		hr
 		#googleMap.wow.fadeIn(data-wow-offset="100")
 		include includes/footer
