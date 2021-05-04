@@ -91,28 +91,28 @@
           </div>
           <div class="row">
             <div class="col"> 
-              <form action="" method="post">
+              <form action="" method="post" Name="myForm">
                 <div class="form-group">
                   <label for="name">Full Name </label>
-                  <input class="form-control" type="text" name="name" id="name" onblur="nameCheck()"/><i class="fas fa-check-circle hide" id="success"></i><i class="fas fa-exclamation-circle hide" id="err"></i><small id="message"></small>
+                  <input class="form-control" type="text" name="name" id="name"/><i class="fas fa-check-circle hide" id="success"></i><i class="fas fa-exclamation-circle hide" id="err"></i><small id="nameerr"></small>
                 </div>
                 <div class="form-group">
                   <label for="email">Email</label>
-                  <input class="form-control" type="text" name="email" id="email"/><i class="fas fa-check-circle hide"> </i><i class="fas fa-exclamation-circle hide"></i><small></small>
+                  <input class="form-control" type="text" name="email" id="email"/><i class="fas fa-check-circle hide"> </i><i class="fas fa-exclamation-circle hide"></i><small id="emailerr"></small>
                 </div>
                 <div class="form-group"> 
                   <label for="msg">Message </label>
                   <textarea class="form-control" name="msg" rows="8" id="msg"> </textarea>
                 </div>
                 <div class="form-group"> 
-                  <button class="btn btn-success" disabled="disabled" id="send">Send</button>
+                  <button class="btn btn-success" id="send">Send</button>
                 </div>
               </form>
             </div>
           </div>
           <div class="row d-flex align-items-center flex-column"><a class="btn btn-success wow flipInX" href="mailto:simonrbrain@yahoo.co.uk" data-wow-offset="100" data-wow-delay="300ms">
               <p>Message Me....</p></a><br/><a class="btn btn-success wow flipInX" href="tel:00000" data-wow-offset="100" data-wow-delay="400ms">
-              <p>Call Me....</p></a></div>
+              <p>Call Me.... </p></a></div>
         </div>
       </div>
     </div>
