@@ -9,38 +9,6 @@ window.onload = function(){
 		}
 	}
 };
-var send = document.getElementById('send');
-
-function nameCheck(e){
-	var name = document.getElementById('name');
-	var nameVal = name.value;
-	var message = document.getElementById('message');
-	var errCheck = document.getElementById('err');
-	var success = document.getElementById('success');
-	if(nameVal === ''){
-		e.preventDefault()
-		message.innerHTML = 'Name cannot be blank';
-		name.classList.remove("formSuccess");
-		name.classList.add("formError");
-		errCheck.classList.remove("hide");
-		success.classList.add("hide");
-	}else if(nameVal.length < 4){
-		message.innerHTML = 'Name too short';
-		name.classList.remove("formSuccess");
-		name.classList.add("formError");
-		errCheck.classList.remove("hide");
-		success.classList.add("hide");
-	
-	}else{
-		message.innerHTML = '';
-		errCheck.classList.add("hide");
-		name.classList.remove("formError");
-		name.classList.add("formSuccess");
-		success.classList.remove("hide");
-	
-	}
-};
-
 new WOW().init();
 function myMap() {
 
