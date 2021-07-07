@@ -26,7 +26,8 @@ footer
           background: linear-gradient(-8deg, lighten($forthcol, 25%) 0%, $forthcol 100%)
           border: 0
           font: 1.5rem $mainFont
-          letter-spacing: 0.3rem
+          letter-spacing: 0.2em
+          padding: .3em .6em
           text-shadow: -1px 1px 2px #000
           transition: all ease 300ms
           &:hover
@@ -37,17 +38,20 @@ footer
               animation-duration: 1s
           span
             float: left
-            padding-top: 3px
-            padding-right: 5px
+            padding-top: .13em
+            padding-right: .3em
 .modal.fade
   .modal-dialog
-    max-width: 50vw
+    max-width: 60vw
     margin: 2rem auto
     @media (max-width: 975px)
       max-width: 80vw
     transition: all cubic-bezier(.21, -2, .51, 3.4) 300ms
     .modal-content
+      background: linear-gradient(-185deg, lighten($forthcol, 20%) 0%, darken($forthcol, 14%) 100%)
+      border: 0
       .modal-header
+        border: 0
         button
           font-size: 4rem
           position: absolute
@@ -57,7 +61,7 @@ footer
           &:hover
             transform: scale(1.4)
         h4
-          letter-spacing: 0.5rem
+          letter-spacing: 0.25em
           margin-bottom: 0px
           font: 2rem $mainFont
           i
@@ -67,7 +71,8 @@ footer
       .modal-body
         a
           font-size: 2rem
-          letter-spacing: 0.4rem
+          letter-spacing: 0.2em
+          border-radius: .15em
           text-shadow: -1px 1px 1px #000
           transition: all ease 300ms
           &:hover
@@ -83,10 +88,13 @@ footer
               animation-name: tada
               animation-duration: 1s
       .modal-footer
+        border: 0
         button
+          font-size: 1.3rem
+          padding: .3em .6em
           background: linear-gradient(-8deg, lighten($forthcol, 25%) 0%, $forthcol 100%)
           color: #fff
-          letter-spacing: 0.2rem
+          letter-spacing: 0.14em
           transition: all ease 300ms
           &:hover
             transform: translateY(3px)
