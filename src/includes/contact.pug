@@ -1,32 +1,32 @@
 #contact
-  .container-outer
-    .container
-      .row
-        .col
-          h1.m-3 Contact
-      .row
-        .col 
-          form(action="", method="post" class="" Name="myForm")
-            .form-group
-              label(for="name") Full Name 
-              input(type="text" name="name" id="name" class="form-control")
-              i.fas.fa-check-circle.hide#success
-              i.fas.fa-exclamation-circle.hide#err
-              small#nameerr
-            .form-group
-              label(for="email") Email
-              input(type="text" name="email" id="email" class="form-control")
-              i.fas.fa-check-circle.hide 
-              i.fas.fa-exclamation-circle.hide
-              small#emailerr
-            .form-group 
-              label(for="msg") Message 
-              textarea(name="msg" rows="8" id="msg" class="form-control")  
-            .form-group 
-              button.btn.btn-success#send Send
-      .row.d-flex.align-items-center.flex-column
-        a.btn.btn-success.wow.flipInX(href="mailto:simonrbrain@yahoo.co.uk" data-wow-offset="100" data-wow-delay="300ms")
-          p Message Me....
-        br
-        a.btn.btn-success.wow.flipInX(href="tel:00000" data-wow-offset="100", data-wow-delay="400ms")
-          p Call Me.... 
+	.container-outer
+		.container
+			.row
+				.col
+					h1.m-3 Contact
+			.row
+				.col 
+					form(action="", method="post" class="" Name="myForm")
+						.form-group
+							label(for="name") Full Name 
+							input(type="text" name="name" id="name" class="form-control")
+							i.fas.fa-check-circle.hide#success
+							i.fas.fa-exclamation-circle.hide#err
+							small#nameerr
+						.form-group
+							label(for="email") Email
+							input(type="text" name="email" id="email" class="form-control")
+							i.fas.fa-check-circle.hide 
+							i.fas.fa-exclamation-circle.hide
+							small#emailerr
+						.form-group 
+							label(for="msg") Message 
+							textarea(name="msg" rows="8" id="msg" class="form-control")  
+						.form-group 
+							button.btn.btn-success#send Send
+			.row.d-flex.align-items-center.flex-column
+				a.btn.btn-success.wow.flipInX(href="mailto:simonrbrain@yahoo.co.uk" data-wow-offset="100" data-wow-delay="300ms")
+					p Message Me....
+				br
+				a.btn.btn-success.wow.flipInX(href="tel:00000" data-wow-offset="100", data-wow-delay="400ms")
+					p Call Me.... 
