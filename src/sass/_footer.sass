@@ -39,6 +39,8 @@ footer
             float: left
             padding-top: .13em
             padding-right: .3em
+          &:focus
+            outline: none !important
 .modal.fade
   background: rgba(0, 0, 0, 0.7)
   .modal-dialog
@@ -60,6 +62,8 @@ footer
           transition: all ease 300ms
           &:hover
             transform: scale(1.4)
+          &:active, &:focus
+            outline: none
         h4
           letter-spacing: 0.25em
           margin-bottom: 0px
