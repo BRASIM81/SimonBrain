@@ -1,7 +1,10 @@
 window.onload = function(){
 	if(document.cookie.length != '0'){
-		var cookieVal = document.cookie.split("=");
-		if(cookieVal[1] == "yes"){
+		var cookieVal = document.cookie.split(';').map(cookie => cookie.split('=')).reduce((acumulator, [key, value]) => ({
+			...acumulator,
+			[key.trim()]: decodeURIComponent(value)
+		}), {});
+		if (cookieVal.cookieacpt == 'yes') {
 			$("#cookies").css({
 				'opacity':'0',
 				'transform':'translate(0,100%)'
