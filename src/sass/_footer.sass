@@ -15,11 +15,11 @@ footer
     @media(min-width: 975px)
       background: rgba(0,0,0,0.6)
     .col
-      min-height: 150px
+      min-height: 50px
       #copy
         font-size: 1.5rem
         margin-bottom: 1rem
-    .col-md-6
+    .col-6
       a
         button.btn-success
           background: linear-gradient(-8deg, lighten($forthcol, 25%) 0%, $forthcol 100%)
@@ -27,11 +27,11 @@ footer
           font: 1.5rem $mainFont
           letter-spacing: 0.2em
           padding: .3em .6em
-          text-shadow: -1px 1px 2px #000
+          text-shadow: -1px 1px 2px rgba(black, .7)
           transition: all ease 300ms
           &:hover
             transform: translateY(3px)
-            box-shadow: 0 10px 6px -7px #000
+            box-shadow: 0 8px 4px -6px rgba(black, .6)
             span
               animation-name: tada
               animation-duration: 1s
@@ -41,6 +41,15 @@ footer
             padding-right: .3em
           &:focus
             outline: none !important
+    #social 
+      a
+        i
+          font-size: 2.5rem
+          color: darken($secondcol, 8%) !important
+          text-shadow: 0 2px 2px rgba(black, .5)
+          &:hover 
+            color:  complement(darken($secondcol, 8%)) !important
+            animation: tada 1s
 .modal.fade
   background: rgba(0, 0, 0, 0.7)
   .modal-dialog
