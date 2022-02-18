@@ -1,0 +1,198 @@
+<?php
+  $sent = false;
+  if(isset($_POST['send']) && $_POST['name'] != ''){
+    $sent = true;
+  }
+  else
+  {
+    $empyt = 'empty';
+  }
+?>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta name="description" content="Freelance Web Developer based in Evesham offering Mobile friendly Web Design, Apps, Graphic Design, Websites"/>
+    <meta name="keywords" content="Web Design Evesham, Web Design Worcestershire, Web Design Stratford, Web Design Worcester, Web Design Cheltenham, App development, Brochures, Banners, Film, Photography, photoshop"/>
+    <!-- Bootstrap css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <!-- Materalize csslink(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css")
+    -->
+    <!-- Fontawesome css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
+    <!-- Animate css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"/>
+    <!-- Main css-->
+    <link rel="stylesheet" href="css/main.css"/>
+    <title>S R Brain - Mobile Web Design, Apps & Graphic Design </title>
+  </head>
+  <body id="top">
+    <div class="home-nav"><a href="#top"><span class="fas fa-arrow-up"></span></a></div>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container"><a class="navbar-brand wow fadeIn" href="index.html">Simon Brain</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-label="Toggle navigation" aria-expand="false"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbar">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="carousel slide carousel-fade" id="carousel" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="head-logo">
+          <h1 class="wow fadeIn" data-wow-delay="500ms">Simon Brain</h1>
+          <h2 class="wow fadeInDown" data-wow-delay="1300ms"> Web Design</h2>
+        </div>
+        <div class="carousel-item active"><img class="d-block w-100" src="img/1.jpg" alt=""/></div>
+        <div class="carousel-item"><img class="d-block w-100" src="img/6.jpg" alt=""/></div>
+        <div class="carousel-item"><img class="d-block w-100" src="img/2.jpg" alt=""/></div>
+      </div>
+    </div>
+    <hr/>
+    <div class="container">
+      <div class="row">
+        <div class="col col-lg-4 cards wow fadeInLeft" data-wow-delay="300ms">
+          <div class="cards-inner d-shadow"><span class="fas fa-paint-roller fa-x3"></span>
+            <p>Tailored To Your Needs</p>
+          </div>
+        </div>
+        <div class="col col-lg-4 cards wow fadeIn" data-wow-delay="1000ms">
+          <div class="cards-inner d-shadow"><span class="fas fa-pencil-ruler"></span>
+            <p>Pixel Perfect Code</p>
+          </div>
+        </div>
+        <div class="col-lg-4 cards wow fadeInRight" data-wow-delay="300ms">
+          <div class="cards-inner d-shadow"><span class="far fa-heart"></span>
+            <p>Built With Love</p>
+          </div>
+        </div>
+      </div>
+      <div class="my-4" id="about">
+        <h1 class="wow fadeIn trigger">Welcome to my website</h1>
+        <p>I'm Simon Brain a freelance front-end web designer &amp; developer based in Evesham Worcestershire.</p>
+        <p>I am passionate about building websites and coding, alwasys learning the latest programming languages.</p><a href="https://www.facebook.com/simonrbrain/"><i class="fab fa-facebook-square p-3"></i></a><a href="https://www.instagram.com/brasim/"><i class="fab fa-instagram p-3"></i></a><a href="https://twitter.com/bypassnurseries"><i class="fab fa-twitter-square p-3"> </i></a>
+      </div>
+    </div>
+    <hr/>
+    <div class="container"> 
+      <div class="my-4" id="skills">
+        <h1 class="wow fadeIn">Skills </h1>
+        <h3 class="wow fadeInDown" data-wow-delay="300ms">PROGRAMMING LANGUAGES & TOOLS</h3>
+        <div class="toolIcons d-flex flex-row justify-content-around flex-wrap mx-3"><i class="fab fa-html5 fa-3x p-2"></i><i class="fab fa-php fa-3x p-2"></i><i class="fab fa-css3 fa-3x p-2"></i><i class="fab fa-js fa-3x p-2"> </i><i class="fab fa-node-js fa-3x p-2"></i><i class="fab fa-sass fa-3x p-2"> </i><i class="fab fa-less fa-3x p-2"></i><i class="fab fa-bootstrap fa-3x p-2"> </i><i class="fab fa-wordpress fa-3x p-2"> </i><i class="fab fa-npm fa-3x p-2"> </i><i class="fab fa-gulp fa-3x p-2"> </i><i class="fab fa-git fa-3x p-2"> </i><i class="fab fa-git-alt fa-3x p-2"></i></div>
+        <h3 class="py-3 wow fadeInDown" data-wow-delay="300ms">WORKFLOW</h3>
+        <p class="wow fadeIn" data-wow-delay="500ms">Mobile-First, Responsive Design</p><i class="fas fa-terminal wow fadeInLeft"></i><br/>
+        <p class="wow fadeIn" data-wow-delay="500ms">Cross Browser Testing & Debugging</p><i class="fas fa-terminal wow fadeInLeft"></i>
+      </div>
+    </div>
+    <hr/>
+    <div id="contact">
+      <div class="container-outer">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h1 class="m-3">Contact</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <?php
+                if($sent):
+              ?>
+              <h1 class="display-2 text-center text-success">Your Message has been sent.</h1>
+              <h3 class="display-4 text-center text-success mb-5">We will be in touch soon.</h3>
+              <?php
+                else:
+              ?>
+              <form action="" method="post" Name="myForm">
+                <div class="form-group">
+                  <label for="name">Full Name </label>
+                  <input class="form-control <?= $empyt ?? "" ?>" type="text" name="name" id="name"/><i class="fas fa-check-circle hide" id="success"></i><i class="fas fa-exclamation-circle hide" id="err"></i><small id="nameerr"></small>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input class="form-control" type="text" name="email" id="email"/><i class="fas fa-check-circle hide"> </i><i class="fas fa-exclamation-circle hide"></i><small id="emailerr"></small>
+                </div>
+                <div class="form-group"> 
+                  <label for="msg">Message </label>
+                  <textarea class="form-control" name="msg" rows="8" id="msg"> </textarea>
+                </div>
+                <div class="form-group"> 
+                  <button class="btn btn-success" id="send">Send</button>
+                </div>
+              </form>
+              <?php
+                endif;
+              ?>
+            </div>
+          </div>
+          <div class="row d-flex align-items-center flex-column"><a class="btn btn-success wow flipInX" href="mailto:simonrbrain@yahoo.co.uk" data-wow-offset="100" data-wow-delay="300ms">
+              <p>Message Me....</p></a><br/><a class="btn btn-success wow flipInX" href="tel:00000" data-wow-offset="100" data-wow-delay="400ms">
+              <p>Call Me.... </p></a></div>
+        </div>
+      </div>
+    </div>
+    <hr/>
+    <div class="wow fadeIn" id="googleMap" data-wow-offset="100"></div>
+    <hr/>
+    <footer>
+      <div class="container-outer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6"><a class="d-shadow" href="#" data-toggle="modal" data-target="#share">
+                <button class="btn btn-success d-shadow my-3">Share<span class="fa fa-share-alt"></span></button></a></div>
+            <div class="col-md-6"></div>
+          </div>
+          <div class="row">
+            <div class="col d-flex justify-content-end align-items-end">
+              <div class="text-white" id="copy"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal fade" id="share" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content d-shadow">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" title="close">&times;</button>
+            <h4 class="modal-title">Share<i class="fa fa-share-alt"></i></h4>
+          </div>
+          <div class="modal-body"><a class="d-shadow my-3 btn btn-block" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://www.srbdesign.tk" style="background: linear-gradient(8deg, #3b5998 0%, #4899D4 100%); color:#ffffff;">Facebook<i class="fab fa-facebook"></i></a><a class="d-shadow my-3 btn btn-block" target="_blank" href="https://twitter.com/home?status=https://www.srbdesign.tk" style="background-color:#83ddf2; color:#ffffff;">Twitter<i class="fab fa-twitter"></i></a><a class="d-shadow my-3 btn btn-block" href="mailto:?subject=Please see this website&amp;body=Check out this website https://www.srbdesign.tk" style="background:linear-gradient(8deg, #EB5F2A 0%, #deac33 100%); color:#ffffff;"> Email<i class="far fa-envelope"></i></a></div>
+          <div class="modal-footer">
+            <button class="btn d-shadow mx-2 my-3" type="button" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="cookies">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10">
+            <p>This site uses cookies to personalize your experience, analyze site usage, and offer tailored promotions. <a href="http://www.youronlinechoices.com/uk/">Your Online Choices</a></p>
+          </div>
+          <div class="col-lg-2">
+            <button class="btn btn-success d-shadow" id="cookie">I ACCEPT</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- JQuery js-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Materalize js<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    -->
+    <!-- Wow js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- Main js-->
+    <script src="js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxCHZFzeZFtLPEVQ7wOP2bb6PbtdNxb8g&amp;callback=myMap"></script>
+  </body>
+</html>
