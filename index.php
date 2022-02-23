@@ -1,3 +1,13 @@
+<?php
+  $sent = false;
+  if(isset($_POST['send']) && $_POST['name'] != ''){
+    $sent = true;
+  }
+  else
+  {
+    $empyt = 'empty';
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -47,17 +57,17 @@
     <hr/>
     <div class="container">
       <div class="row">
-        <div class="col-6 col-lg-4 cards wow fadeInLeft" data-wow-delay="300ms">
+        <div class="col col-lg-4 cards wow fadeInLeft" data-wow-delay="300ms">
           <div class="cards-inner d-shadow"><span class="fas fa-paint-roller fa-x3"></span>
             <p>Tailored To Your Needs</p>
           </div>
         </div>
-        <div class="col order-1 col-lg-4 order-lg-0 cards wow fadeIn" data-wow-delay="1000ms">
+        <div class="col col-lg-4 cards wow fadeIn" data-wow-delay="1000ms">
           <div class="cards-inner d-shadow"><span class="fas fa-pencil-ruler"></span>
             <p>Pixel Perfect Code</p>
           </div>
         </div>
-        <div class="col-6 col-lg-4 cards wow fadeInRight" data-wow-delay="300ms">
+        <div class="col-lg-4 cards wow fadeInRight" data-wow-delay="300ms">
           <div class="cards-inner d-shadow"><span class="far fa-heart"></span>
             <p>Built With Love</p>
           </div>
@@ -90,11 +100,19 @@
             </div>
           </div>
           <div class="row">
-            <div class="col"> 
+            <div class="col">
+              <?php
+                if($sent):
+              ?>
+              <h1 class="display-2 text-center text-success">Your Message has been sent.</h1>
+              <h3 class="display-4 text-center text-success mb-5">We will be in touch soon.</h3>
+              <?php
+                else:
+              ?>
               <form action="" method="post" Name="myForm">
                 <div class="form-group">
                   <label for="name">Full Name </label>
-                  <input class="form-control" type="text" name="name" id="name"/><i class="fas fa-check-circle hide" id="success"></i><i class="fas fa-exclamation-circle hide" id="err"></i><small id="nameerr"></small>
+                  <input class="form-control <?= $empyt ?? "" ?>" type="text" name="name" id="name"/><i class="fas fa-check-circle hide" id="success"></i><i class="fas fa-exclamation-circle hide" id="err"></i><small id="nameerr"></small>
                 </div>
                 <div class="form-group">
                   <label for="email">Email</label>
@@ -108,6 +126,9 @@
                   <button class="btn btn-success" id="send">Send</button>
                 </div>
               </form>
+              <?php
+                endif;
+              ?>
             </div>
           </div>
           <div class="row d-flex align-items-center flex-column"><a class="btn btn-success wow flipInX" href="mailto:simonrbrain@yahoo.co.uk" data-wow-offset="100" data-wow-delay="300ms">
@@ -123,10 +144,12 @@
       <div class="container-outer">
         <div class="container">
           <div class="row">
-            <div class="col-6 col-md-4"><a class="d-shadow" href="#" data-toggle="modal" data-target="#share">
-                <button class="btn btn-success d-shadow my-3 mr-1">Share <span class="fa fa-share-alt"></span></button></a></div>
-            <div class="col-6 col-md-4 d-flex justify-content-around align-items-center" id="social"><a href="https://facebook.com" target="_blank"> <i class="fab fa-facebook"></i></a><a href="https://wa.me/447791602092" target="_blank"><i class="fab fa-whatsapp"></i></a><a href="https://instagram.com" target="_blank"> <i class="fab fa-instagram"></i></a><a href="https://twitter.com" target="_blank"> <i class="fab fa-twitter"></i></a><a href="https://linkedin.com" target="_blank">	<i class="fab fa-linkedin"></i></a></div>
-            <div class="col col-md-4 d-flex justify-content-end align-items-end">
+            <div class="col-md-6"><a class="d-shadow" href="#" data-toggle="modal" data-target="#share">
+                <button class="btn btn-success d-shadow my-3">Share<span class="fa fa-share-alt"></span></button></a></div>
+            <div class="col-md-6"></div>
+          </div>
+          <div class="row">
+            <div class="col d-flex justify-content-end align-items-end">
               <div class="text-white" id="copy"></div>
             </div>
           </div>
@@ -140,7 +163,7 @@
             <button class="close" type="button" data-dismiss="modal" title="close">&times;</button>
             <h4 class="modal-title">Share<i class="fa fa-share-alt"></i></h4>
           </div>
-          <div class="modal-body"><a class="d-shadow my-3 btn btn-block" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://www.srbdesign.tk" style="background: linear-gradient(8deg, #3b5998 0%, #4899D4 100%); color:#ffffff;">Facebook<i class="fab fa-facebook"></i></a><a class="d-shadow my-3 btn btn-block" target="_blank" href="https://twitter.com/home?status=https://www.srbdesign.tk" style="background-color:#83ddf2; color:#ffffff;">Twitter<i class="fab fa-twitter"></i></a><a class="d-shadow my-3 btn btn-block" href="https://wa.me/?text=Check out this website https://srbdesign.tk" style="background:linear-gradient(8deg, green 10%, #00e600 100%); color:#ffffff;"> WhatsApp<i class="fab fa-whatsapp"></i></a><a class="d-shadow my-3 btn btn-block" href="mailto:?subject=Please see this website&amp;body=Check out this website https://www.srbdesign.tk" style="background:linear-gradient(8deg, #EB5F2A 0%, #deac33 100%); color:#ffffff;"> Email<i class="far fa-envelope"></i></a></div>
+          <div class="modal-body"><a class="d-shadow my-3 btn btn-block" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://www.srbdesign.tk" style="background: linear-gradient(8deg, #3b5998 0%, #4899D4 100%); color:#ffffff;">Facebook<i class="fab fa-facebook"></i></a><a class="d-shadow my-3 btn btn-block" target="_blank" href="https://twitter.com/home?status=https://www.srbdesign.tk" style="background-color:#83ddf2; color:#ffffff;">Twitter<i class="fab fa-twitter"></i></a><a class="d-shadow my-3 btn btn-block" href="mailto:?subject=Please see this website&amp;body=Check out this website https://www.srbdesign.tk" style="background:linear-gradient(8deg, #EB5F2A 0%, #deac33 100%); color:#ffffff;"> Email<i class="far fa-envelope"></i></a></div>
           <div class="modal-footer">
             <button class="btn d-shadow mx-2 my-3" type="button" data-dismiss="modal">Close</button>
           </div>
@@ -150,7 +173,7 @@
     <div id="cookies">
       <div class="container">
         <div class="row">
-          <div class="col">
+          <div class="col-lg-10">
             <p>This site uses cookies to personalize your experience, analyze site usage, and offer tailored promotions. <a href="http://www.youronlinechoices.com/uk/">Your Online Choices</a></p>
           </div>
           <div class="col-lg-2">
