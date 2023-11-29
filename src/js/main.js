@@ -34,10 +34,10 @@ $(document).ready(function(){
 		$(window).on('scroll', function(){
 				var wScroll = $(this).scrollTop();
 				$('.head-logo>h1').css({
-					'transform' : 'translate(0px, '+wScroll / 1.4+'%)'
+					'transform' : 'translate(0px, '+wScroll / 1.7+'%)'
 				});
 				$('.head-logo>h2').css({
-					'transform' : 'translate(0px, '+wScroll / 1.2+'%)'
+					'transform' : 'translate(0px, '+wScroll / 1.3+'%)'
 				});
 				if(wScroll > $('.trigger').offset().top-($(window).height()/1.2)){
 				$('.home-nav').css({

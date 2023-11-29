@@ -4,7 +4,6 @@
     .carousel-item
       img 
         object-fit: cover
-        filter: brightness(.25) blur(3px)
     .head-logo
       position: absolute
       z-index: 111
@@ -16,6 +15,8 @@
       flex-direction: column
       justify-content: center
       align-items: center
+      background-color: rgba(0,0,0,.75)  
+      backdrop-filter: blur(3px)
       h1
         font-size: calc(10vw + 1rem)  
         color: #fff

@@ -1,19 +1,13 @@
-#img-banner
-  height: 250px
-  width: 100vw
-  background-image: url("../img/5.jpg")
-  background-attachment: fixed
-  background-size: cover
 footer
   background: url('../img/4.jpg') no-repeat
-  background-position: 50% 50%
+  background-position: center center
   background-size: cover
   @media(min-width: 796px)
     background-attachment: fixed
   .container-outer
-    background: rgba(0,0,0,0.5)
-    @media(min-width: 975px)
-      background: rgba(0,0,0,0.6)
+    padding: 1.2rem 0
+    background: rgba(0,0,0,0.75)
+    backdrop-filter: blur(3px)
     .col
       min-height: 50px
       #copy
