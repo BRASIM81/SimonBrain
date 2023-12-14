@@ -34,7 +34,7 @@ $(document).ready(function(){
 		$(window).on('scroll', function(){
 				var wScroll = $(this).scrollTop();
 				$('.head-logo>h1').css({
-					'transform' : 'translate(0px, '+wScroll / 1.7+'%)'
+					'transform' : 'translate(0px, '+wScroll / 2+'%)'
 				});
 				$('.head-logo>h2').css({
 					'transform' : 'translate(0px, '+wScroll / 1.3+'%)'
